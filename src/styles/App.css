@@ -1,32 +1,60 @@
-.header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #3baa69; /* celeste suave */
+
+:root {
+    --beige-clarito: hwb(0 100% 0%);
+    --verde-oscuro: #004726;
+    --negro: #2b2b2b;
   }
   
-  .profile-pic {
-    width: 150px;
-    border-radius: 50%;
-  }
+ 
   body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    background-color: var(--beige-clarito);
+    color: var(--negro);
   }
+  
   
   .header {
     text-align: center;
     padding: 2rem;
-    background-color: #e0f7fa;
+    background-color: var(--beige-clarito);
   }
   
-  .profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+  
+  .navbar {
+    background-color: var(--verde-oscuro);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #f4faf9;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #012721;
+    text-decoration: underline;
+  }
+  
+ 
   .main {
     padding: 2rem;
     max-width: 800px;
@@ -34,20 +62,58 @@
   }
   
   .main h2 {
-    color: #00796b;
+    color: var(--verde-oscuro);
     margin-top: 2rem;
   }
+  
   
   .footer {
     text-align: center;
     padding: 1rem;
-    background-color: #b2ebf2;
+    background-color: #004726;
+    color: #f4faf9;
     margin-top: 2rem;
   }
   
-  .redes a {
-    margin: 0 0.5rem;
-    color: #004d40;
+  .footer a {
+    color: #f4faf9;
     text-decoration: none;
+  }
+  
+  /* Profile pic */
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #004726;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  /* Secciones */
+  .section {
+    background-color: #f1fafe;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2 5px 8px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+  }
+  ss
+  .section:hover {
+    transform: translateY(-3px);
+  }
+  
+  .section.alt {
+    background-color: #f1fafe
+  }
+  
+  .section h2 {
+    color: var(--verde-oscuro);
+    margin-bottom: 2rem;
+    font-size: 1.0rem;
+    border-bottom: 2px solid #004726;
+    padding-bottom: 0.5rem;
   }
   
