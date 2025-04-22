@@ -1,0 +1,11 @@
+.header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #3baa69; /* celeste suave */
+  }
+  
+  .profile-pic {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
