@@ -1,6 +1,6 @@
 import React from "react";
 
-const habilidades = ["Trabajo en equipo", "Comunicación", "Resolución de problemas", "Aprendizaje autónomo"];
+const habilidades = ["Trabajo en equipo", "Comunicación", "Resolución de problemas", "Aprendizaje autónomo","Manejo de paquete Office"];
 
 const SoftSkills = () => {
   return (

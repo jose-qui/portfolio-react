@@ -4,40 +4,36 @@ import SoftSkills from "./SoftSkills";
 
 const Main = () => {
   return (
-    <main className="main">
-      <section className="presentacion">
-        <p>
-          Soy Jose María Quiroga, estudiante de Programación en la Facultad
-          Regional Tucumán. Tengo 21 años soy un apasionado por la tecnología y el desarrollo de sowftware. Me gusta combinar mi interés por la computación con mi pasión por el futbol, la música y el entrenamiento físico. Tengo conocimientos en C#, Java, HTML, CSS y Base de datos. Cuando termine la carrera me gustaría enfocarme en el desarrollo de web y frontend.
-        </p>
-      </section>
-
-      <section id="estudios">
+    <main className="main-content">
+      <section id="estudios" className="section">
         <h2>Estudios</h2>
         <Estudios />
       </section>
 
-      <section id="softskills">
+      <section id="softskills" className="section alt">
         <h2>Soft Skills</h2>
         <SoftSkills />
       </section>
 
-      {/* Podés agregar secciones vacías para completar después */}
-      <section>
+      <section id="proyectos" className="section">
         <h2>Proyectos Realizados</h2>
-        <p>Próximamente...</p>
+        <p>Potfolio React: Mi portfolio personal realizado con React</p>
+        <p>Pagina Web: Pagina web de un cine como tfi</p>
+        <p>Pagina Web: Realizado con HTML y CSS para una tienda de ropa</p>
       </section>
 
-      <section>
+      <section id="experiencia" className="section alt">
         <h2>Experiencia Laboral</h2>
-        <p>Próximamente...</p>
+        <p>Embalajes Brito S.A (2021) - </p>
+        <p>Teleperformance (2022-2023) - </p>
       </section>
 
-      <section>
+      <section id="idiomas" className="section">
         <h2>Idiomas</h2>
         <p>Español Nativo</p>
-        <p>Ingles Intermedio</p>
+        <p>Inglés Intermedio</p>
       </section>
+
     </main>
   );
 };
